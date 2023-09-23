@@ -159,10 +159,11 @@ body
 }
 #contact-form
 {
-    position: absolute;
-    top: 5%;
     color: #FFC436;
     font-size: 35px;
-    left: 35%;
+    left: 38%;
+    text-align: right;
+    position: fixed;
+    top: 20%;
 }
 /* anything less than 1025 goes to tablet mode */
