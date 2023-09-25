@@ -4,12 +4,12 @@ html
 }
 body
 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: linear-gradient(#FFC436,#191D88)
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(#FFC436,#191D88) fixed;
 }
 .header
 {
@@ -30,6 +30,7 @@ body
     display: flex;
     background-color: #1450A3;
     top: 0;
+    z-index: 3;
     left: 0;
     width: 100%;
     height: 100px;
@@ -167,4 +168,48 @@ form
     width: 90%;
     max-width:600px;
 }
+.section
+{
+    border: solid 2px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 3px;
+
+}
+#project-1
+{
+    border-color: firebrick;
+}
+#project-2
+{
+
+}
+.content-placement
+{
+    width: 100%;
+    display: block;
+    height: 100%;
+    text-align: right;
+    position: relative;
+}
+article
+{
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: left;
+}
+article img
+{
+
+}
+
 /* anything less than 1025 goes to tablet mode */
