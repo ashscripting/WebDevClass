@@ -281,11 +281,20 @@ article
     top: 50%;
     transform: translate(-50%,-50%);
     margin: auto;
-
 }
 #homepage-txt h1
 {
     color: #1450A3;
     font-size: 60px;
+}
+#article-b
+{
+    color: #1450A3;
+    text-shadow: #FFC436 0 2px 0;
+}
+#article-b-p
+{
+    color: #FFC436;
+    text-shadow: #1450A3 0 2px 0;
 }
 /*anything less than 1025 goes to tablet mode */
