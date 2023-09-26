@@ -205,4 +205,31 @@ article
 {
     transform: translateY(-2%) translateX(2%);
 }
-/* anything less than 1025 goes to tablet mode */
+p{
+    color: #FFC436;
+    font-size:20px;
+    text-shadow: #1450A3 0 2px 2px;
+    margin: 1px;
+    padding: 1px;
+    position: relative;
+    right: 0;
+}
+#about-pic
+{
+    height: 200px;
+    max-width:100%;
+}
+.rows
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+.row
+{
+    margin: 10px;
+    text-align: center;
+}
+/*anything less than 1025 goes to tablet mode */
