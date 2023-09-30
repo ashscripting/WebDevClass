@@ -1,4 +1,4 @@
-the logo is from https://app.logo.com/ website and since there are no authors and u make ur own
+the logo is from https://app.logo.com/ website and since there are no authors, and you make your own
 logo I couldn't make a proper citation.
 
 about me picture citation:

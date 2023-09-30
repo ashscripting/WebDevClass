@@ -1,0 +1,28 @@
+@media screen and (max-width:1200px) and (min-width: 1025px)
+{
+    .menu
+    {
+        display: none;
+    }
+    #hamburger-menu-icon
+    {
+        display: block;
+    }
+    #hamburger-menu:checked ~ .menu-box
+    {
+        display: flex;
+    }
+    .contact-box {
+        width: 400px;
+        height: 500px;
+    }
+    .form-element
+    {
+        width: 100%;
+    }
+    form
+    {
+        width: 90%;
+        height: 100%;
+    }
+}

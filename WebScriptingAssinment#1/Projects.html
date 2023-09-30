@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel = "stylesheet" href = "styles.css" type = "text/css">
+    <link rel='stylesheet' media='screen and (max-width:1200px) and (min-width: 1025px)' href='Tablet.css' />
+    <link rel='stylesheet' media='screen and (max-width:1024px) and (min-width: 420px)' href='Phone.css' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Projects</title>
 </head>
 <body>
@@ -16,6 +19,14 @@
                 <a class = "nav_item" href="About-Me.html">About Me</a>
                 <a class = "nav_item" href="Projects.html">Projects</a>
             </nav>
+            <label class="material-icons" id="hamburger-menu-icon" for="hamburger-menu">menu</label>
+            <input type = "checkbox" id="hamburger-menu">
+            <div class = "menu-box">
+                <a class = "nav_box_item" href="index.html">Home</a>
+                <a class = "nav_box_item" href="Contact-Me.html">Contact Me</a>
+                <a class = "nav_box_item" href="About-Me.html">About Me</a>
+                <a class = "nav_box_item" href="Projects.html">Projects</a>
+            </div>
         </div>
     </div>
 </header>
