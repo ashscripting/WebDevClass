@@ -1,0 +1,38 @@
+<% include('../partials/Header.ejs') %>
+
+<a href="/userlist/add" class="btn btn-primary mb-3" role="button">
+    <i class="fas fa-plus-circle"></i> Add Student
+</a>
+
+<table class="table table-bordered table-striped table-hover">
+    <tr class="d-flex">
+        <th class="text-center col-2">Name</th>
+        <th class="text-center col-2">Lastname</th>
+        <th class="text-center col-4">UserId</th>
+    </tr>
+    <% userList.forEach(user => { %>
+        <tr class="d-flex">
+            <td class="text-center col-2"><%= user.Name %></td>
+            <td class="text-center col-2"><%= user.Lastname %></td>
+            <td class="text-center col-4"><%= user.UserId %></td>
+            <td class="text-center col-1">
+                <a href="/userlist/edit/<%= user._id %>" class="btn">Edit</a>
+            </td>
+            <td class="text-center col-1">
+                <button data-href="/userlist/delete/<%= user._id %>" class="btn" onclick="return confirmDelete('<%= user.UserId %>')">Delete</button>
+                    <script>
+                        function confirmDelete(Userid) {
+                            var result = confirm("Are you sure you want to delete this entry?");
+                            if (result) {
+                                var element = document.activeElement;
+                                var href = element.getAttribute('data-href');
+                                window.location.href = href;
+                            }
+                        }
+                    </script>
+            </td>
+        </tr>
+    <% }); %>
+</table>
+
+<% include('../partials/Footer.ejs') %>
