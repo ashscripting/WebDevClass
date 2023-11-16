@@ -9,7 +9,7 @@ body
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
-  background: linear-gradient(#FFC436,#191D88) fixed;
+  background: linear-gradient(#ff8336,#191D88) fixed;
 }
 .section
 {
@@ -69,7 +69,7 @@ ul
   font-size: 20px;
   margin: 2px;
   text-decoration: none;
-  color: #FFC436;
+  color: #ff8336;
 }
 .menu ul li a:hover
 {

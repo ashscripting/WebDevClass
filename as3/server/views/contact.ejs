@@ -1,0 +1,28 @@
+<%- include('partials/Header.ejs') %>
+<%- include('partials/Site_Header.ejs') %>
+<div class="contact-box-place">
+    <div class="contact-box">
+        <form class = "form">
+            <h1 id = "contact-form-header">
+                Contact Form
+            </h1>
+            <label class = "label">
+                Name<input type="text" class="form-element" placeholder="Name">
+            </label>
+            <label class = "label">
+                Email<input type="email" class="form-element" placeholder="Example@example.com">
+            </label>
+            <label class = "label">
+                Phone<input type="tel" class="form-element" placeholder="(555) 555-5555">
+            </label>
+            <label class = "label">
+                Comment<textarea class="form-element" placeholder="Comment" id = "text-box"></textarea>
+            </label>
+            <input type="submit" class="form-element" id = "btn">
+        </form>
+    </div>
+
+</div>
+<div id = "spacer"></div>
+<%- include('partials/Site-Footer.ejs') %>
+<%- include('partials/Footer.ejs') %>

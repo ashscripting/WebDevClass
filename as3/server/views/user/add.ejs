@@ -1,0 +1,26 @@
+<%- include('../partials/Header.ejs') %>
+<%- include('../partials/Site_Header.ejs') %>
+
+
+<div class="placement">
+    <form class="form" method="POST">
+        <div class="form-elements">
+            <label class = "label" for="name">Name</label>
+            <input type="text" class="elements" id="name" placeholder="Enter User's Name" name="Name" required>
+        </div>
+        <div class="form-elements ">
+            <label class = "label" for="Lastname">Last Name</label>
+            <input type="text" class="elements" id="Lastname" placeholder="Enter Users's Last Name" name="Lastname" required>
+        </div>
+        <div class="form-elements ">
+            <label class = "label" for="ID">User ID</label>
+            <input type="text" class="elements" id="ID" placeholder="Enter User's ID Number" name="UserId" required>
+        </div>
+        <div class ="btn-container">
+            <button class="button" type="submit" >Submit</button>
+            <button type = "button" onclick="window.location.href='/userlist'" class="button">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<%- include('../partials/Footer.ejs') %>
