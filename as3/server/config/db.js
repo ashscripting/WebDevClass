@@ -1,3 +1,3 @@
 module.exports = {
-    "URI":"mongodb://127.0.0.1:27017/user-list"
+    "URI":"mongodb+srv://ASH:ASHPass2023@user-list.un9ouvh.mongodb.net/user-list?retryWrites=true&w=majority"
 }
