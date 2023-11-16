@@ -5,18 +5,18 @@
             <form class="form" method="POST">
                 <div class="form-elements">
                     <label for="name">Name</label>
-                    <input type="text" class="elements" id="name" placeholder="Enter User's Name" name="Name" value="<%= user.Name%>" required>
+                    <input type="text" class="elements" id="name" placeholder="Enter prof's Name" name="FullName" value="<%= prof.FullName%>" required>
                 </div>
                 <div class="form-elements mt-3">
                     <label for="Lastname">Last Name</label>
-                    <input type="text" class="elements" id="Lastname" placeholder="Enter Users's Lastname" name="Lastname" value="<%= user.Lastname%>" required>
+                    <input type="text" class="elements" id="Lastname" placeholder="Enter profs's Lastname" name="Program" value="<%= prof.Program%>" required>
                 </div>
                 <div class="form-elements mt-3">
-                    <label for="ID">User Id</label>
-                    <input type="text" class="elements" id="ID" placeholder="Enter User's id number" name="UserId" value="<%= user.UserId%>" required>
+                    <label for="ID">prof Id</label>
+                    <input type="text" class="elements" id="ID" placeholder="Enter prof's id number" name="Email" value="<%= prof.Email%>" required>
                 </div>
                 <button class="btn" type="submit">Submit</button>
-                <a href="/userlist" class="btn"> Cancel</a>
+                <a href="/proflist" class="btn"> Cancel</a>
             </form>
         </div>
     </div>
