@@ -8,7 +8,8 @@ module.exports.Dislayuserlist = async (req,res,next)=>{ //< Mark function as asy
         const userList = await user.find(); //< Use of await keyword
         res.render('user/list', {
             title: 'user List',
-            userList: userList
+            userList: userList,
+            displayName: req.user ? req.user.displayName:''
         });
     }catch(err){
         console.error(err);
@@ -23,7 +24,8 @@ module.exports.Adduser = async (req,res,next)=>{
     try{
         res.render('user/add',
             {
-                title:'Add user'
+                title:'Add user',
+                displayName: req.user ? req.user.displayName:''
             })
     }
     catch(err)

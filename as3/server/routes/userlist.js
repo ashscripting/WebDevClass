@@ -3,6 +3,17 @@ var router = express.Router();
 //const { router } = require('../config/app');
 let user = require('../models/userlist');
 let userController = require('../controllers/userlist')
+
+let mongoose = require('mongoose');
+// helper function
+function requireAuth(req,res,next){
+    if(!req.isAuthenticated())
+    {
+        return res.redirect('/login')
+    }
+    next();
+}
+
 /* Get route for the Info user list */
 // Read Operation
 router.get('/', userController.Dislayuserlist);
